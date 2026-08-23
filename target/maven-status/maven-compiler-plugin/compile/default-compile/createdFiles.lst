@@ -1,0 +1,6 @@
+cl\duoc\jv0101\caso04\antifraude\controller\AlertaFraudeController.class
+cl\duoc\jv0101\caso04\antifraude\AlertaFraudeApplication.class
+cl\duoc\jv0101\caso04\antifraude\repository\AlertaFraudeRepository.class
+cl\duoc\jv0101\caso04\antifraude\config\OpenApiConfig.class
+cl\duoc\jv0101\caso04\antifraude\model\AlertaFraude.class
+cl\duoc\jv0101\caso04\antifraude\service\AlertaFraudeService.class
