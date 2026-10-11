@@ -1,6 +1,6 @@
-cl\duoc\jv0101\caso04\antifraude\controller\AlertaFraudeController.class
-cl\duoc\jv0101\caso04\antifraude\AlertaFraudeApplication.class
-cl\duoc\jv0101\caso04\antifraude\repository\AlertaFraudeRepository.class
-cl\duoc\jv0101\caso04\antifraude\config\OpenApiConfig.class
-cl\duoc\jv0101\caso04\antifraude\model\AlertaFraude.class
-cl\duoc\jv0101\caso04\antifraude\service\AlertaFraudeService.class
+cl\novabank\antifraude\AntifraudeApplication.class
+cl\novabank\antifraude\repository\EvaluacionRiesgoRepository.class
+cl\novabank\antifraude\model\EvaluacionRiesgo.class
+cl\novabank\antifraude\controller\EvaluacionRiesgoController.class
+cl\novabank\antifraude\model\EvaluacionRiesgo$EvaluacionRiesgoBuilder.class
+cl\novabank\antifraude\service\EvaluacionRiesgoService.class

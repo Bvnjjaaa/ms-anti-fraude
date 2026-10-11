@@ -1,6 +1,0 @@
-cl\duoc\jv0101\caso04\antifraude\AlertaFraudeServiceTest.class
-cl\duoc\jv0101\caso04\antifraude\OpenApiConfigTest.class
-cl\duoc\jv0101\caso04\antifraude\AlertaFraudeControllerTest.class
-cl\duoc\jv0101\caso04\antifraude\cucumber\CucumberRunnerTest.class
-cl\duoc\jv0101\caso04\antifraude\cucumber\AlertaFraudeSteps.class
-cl\duoc\jv0101\caso04\antifraude\cucumber\CucumberSpringConfiguration.class
