@@ -7,6 +7,8 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Positive;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -27,14 +29,16 @@ public class EvaluacionRiesgo {
     private Long id;
 
     @NotNull(message = "El identificador de la transacción es obligatorio")
+    @Positive
     @Column(nullable = false)
     private Long transaccionId;
 
-    @NotNull(message = "El RUT del cliente es obligatorio")
+    @NotBlank(message = "El RUT del cliente es obligatorio")
     @Column(nullable = false)
     private String rutCliente;
 
     @NotNull(message = "El monto es obligatorio")
+    @Positive
     @Column(nullable = false)
     private Double monto;
 

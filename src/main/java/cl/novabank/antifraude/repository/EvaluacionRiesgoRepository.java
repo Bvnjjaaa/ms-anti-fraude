@@ -12,7 +12,7 @@ public interface EvaluacionRiesgoRepository extends JpaRepository<EvaluacionRies
 
     List<EvaluacionRiesgo> findByRutCliente(String rutCliente);
 
-    Optional<EvaluacionRiesgo> findByTransaccionId(Long transaccionId);
+    Optional<EvaluacionRiesgo> findFirstByTransaccionIdOrderByIdDesc(Long transaccionId);
 
     List<EvaluacionRiesgo> findByNivelRiesgo(String nivelRiesgo);
 

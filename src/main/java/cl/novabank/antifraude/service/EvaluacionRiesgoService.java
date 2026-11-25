@@ -20,6 +20,7 @@ public class EvaluacionRiesgoService {
     private final EvaluacionRiesgoRepository repository;
 
     public EvaluacionRiesgo evaluarTransaccion(EvaluacionRiesgo evaluacion) {
+        evaluacion.setId(null);
         double monto = evaluacion.getMonto();
 
         if (monto > UMBRAL_RIESGO_ALTO) {
@@ -47,7 +48,7 @@ public class EvaluacionRiesgoService {
     }
 
     public EvaluacionRiesgo obtenerPorTransaccion(Long transaccionId) {
-        return repository.findByTransaccionId(transaccionId)
+        return repository.findFirstByTransaccionIdOrderByIdDesc(transaccionId)
                 .orElseThrow(() -> new ResponseStatusException(
                         HttpStatus.NOT_FOUND, "No se encontró una evaluación para la transacción " + transaccionId));
     }

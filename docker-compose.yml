@@ -1,8 +1,6 @@
 services:
-  anti-fraude-svc:
+  anti-fraude:
     build: .
-    image: duoc/jv0101-caso04-anti-fraude:1.0.0
-    container_name: caso04-anti-fraude-svc
+    image: novabank/anti-fraude:local
     ports:
-      - "${PORT:-8080}:8080"
-    restart: unless-stopped
+      - "127.0.0.1:${PORT:-8085}:8080"
